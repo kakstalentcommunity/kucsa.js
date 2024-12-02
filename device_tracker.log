@@ -1,0 +1,23 @@
+2024-12-02 12:14:44,846 - DeviceTracker - ERROR - ML Model Initialization Error: name 'IsolationForest' is not defined
+2024-12-02 12:14:48,338 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.11.185.218:5000
+2024-12-02 12:14:48,339 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-12-02 12:34:23,817 - advanced - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\USER\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\USER\Desktop\kucsa.js\advanced.py", line 199, in device_dashboard
+    return render_template('dashboard.html', devices=self._get_tracked_devices())
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'AdvancedMLDeviceTracker' object has no attribute '_get_tracked_devices'
+2024-12-02 12:34:24,147 - werkzeug - INFO - 10.11.185.218 - - [02/Dec/2024 12:34:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-02 12:34:24,546 - werkzeug - INFO - 10.11.185.218 - - [02/Dec/2024 12:34:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

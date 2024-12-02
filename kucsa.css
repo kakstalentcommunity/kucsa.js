@@ -1,0 +1,249 @@
+*{
+    --primary-color: #0077b6;
+    --secondary-color: #ffcc00;
+    --text-color: #333;
+    --bg-color: #f5f5f5;
+}
+.body{
+    font-family:arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), url('/api/placeholder/1200/400'));
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: 5dvh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.logo{
+    padding: 6rem;
+}
+.logo img{
+    max-width: 100px;
+    height: auto;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #ffd700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+nav{
+    background-color: #222;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover{
+    color: #ffd700;
+}
+.section{
+    padding: 50px 20px;
+}
+.news-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minimax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.news-card{
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.news-card:hover{
+    transform: translateY(-5px);
+}
+.image-container{
+    width: 100px;
+    height: 400px;
+    position: relative;
+}
+.news-image{
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fit-cover{
+    object-fit: cover;
+}
+.fit-contain{
+    object-fit: fill;
+}
+.fit-fill{
+    object-fit: fill;
+}
+
+.news-content{
+    padding: 20px;
+    font-size: 24px;
+    color: #0c7718;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.fixture-card{
+    background-color: rgb(158, 203, 52);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.fixture-card:hover{
+    transform: translateY(-5px);
+}
+.fixtures{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.fixtures-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.team{
+    flex: 1;
+    text-align: center;
+}
+.vs{
+    padding: 0 20px;
+    font-weight: bold;
+    color: #666;
+}
+.contact-section{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px 20px;
+}
+
+.contact-form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+}
+.contact-form button{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contact-section{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px 20px;
+}
+.contract-section:hover{
+    transform: translateY(-5px);
+}
+.contract-card{
+    background-color: rgb(11, 167, 234);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.contract-section{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px 20px;
+}
+.contract-form{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contract-form input,
+.contract-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+}
+.contract-form button{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #f01414;
+    color: rgb(21, 231, 102);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+@media(max-width: 768px){
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .header{
+        height: 300px;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+        font-size: 18px;
+    }
+}
